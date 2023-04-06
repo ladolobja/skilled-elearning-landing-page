@@ -95,11 +95,10 @@ main {
 }
 
 section {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 375px; */
-    display: grid;
+    align-items: center;
+    width: 100%;
 }
 
 .card-header {
@@ -218,11 +217,11 @@ h4 {
         background-size: 640px 640px;
     }
 
-    header{
+    header {
         padding: 24px 40px 0 39px
     }
 
-    main{
+    main {
         padding-top: 99px;
     }
 
@@ -232,13 +231,13 @@ h4 {
         margin-bottom: 186px;
     }
 
-    .text-container{
+    .text-container {
         width: 398px;
         height: 284px;
-        padding-left: 23px;      
+        padding-left: 23px;
     }
-    
-    .picture-container{
+
+    .picture-container {
         display: none;
     }
 
@@ -246,5 +245,180 @@ h4 {
         display: none;
     }
 
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 768px;
 
+
+    }
+
+    .card-header {
+        height: 259px;
+        padding: 56px 21px 139px 32px;
+        margin-top: 24px;
+
+    }
+
+    footer {
+        margin-top: 86px;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image: url("./images/image-hero-desktop.png");
+        background-repeat: no-repeat;
+        background-position: top -200px right -325px;
+        background-size: 991.63px 936.92px;
+    }
+
+    header {
+        padding: 29px 165px 0;
+    }
+
+    .header-h1 {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 45px;
+        padding-left: 15px;
+    }
+
+    .header-button {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .header-button:hover {
+        background: #666CA3;
+        border-radius: 28px;
+        cursor: pointer;
+    }
+
+    /* main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+    } */
+
+    .budget {
+        flex-direction: row;
+        justify-content: unset;
+        margin-bottom: 226px;
+    }
+
+    .text-container {
+        width: 457px;
+        height: 359px;
+        padding-left: 165px;
+    }
+
+    .main-h1 {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 71px;
+        color: #13183F;
+    }
+
+    .main-p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #83869A;
+        padding: 29px 0 40px;
+    }
+
+    .main-button {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .main-button:hover {
+        cursor: pointer;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        border-radius: 31.5px;
+    }
+
+
+    section {
+        width: 1440px;
+        justify-content: center;
+        row-gap: 80px;
+        column-gap: 30px;
+    }
+
+    .card-header {
+        width: 350px;
+        height: 322px;
+    }
+
+    h2 {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 40px;
+        color: #FFFFFF;
+        padding: 0 40px 138px 0;
+    }
+
+    /* .card{
+        display: flex;
+
+    } */
+    .animation-card {
+        width: 350px;
+        height: 322px;
+        background: #FFFFFF;
+        box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+        border-radius: 15px;
+
+    }
+
+    h3 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+        color: #13183F;
+    }
+
+    .sec-p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #83869A;
+    }
+
+    .card-button {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .card-button:hover {
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 1px solid #BABABA;
+        border-radius: 10px;
+
+    }
+
+    footer {
+        margin-top: 140px;
+        padding-left: 166px;
+        padding-right: 165px;
+    }
+
+    .footer-button {
+        width: 167px;
+        height: 56px;
+    }
+
+    .footer-button:hover {
+        cursor: pointer;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+        border-radius: 28px;
+    }
 }
